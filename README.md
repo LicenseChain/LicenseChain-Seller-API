@@ -519,10 +519,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Documentation**: [https://docs.licensechain.com/seller-api](https://docs.licensechain.com/seller-api)
+- **Documentation**: [https://docs.licensechain.app/seller-api](https://docs.licensechain.app/seller-api)
 - **Issues**: [GitHub Issues](https://github.com/LicenseChain/LicenseChain-Seller-API/issues)
 - **Discord**: [LicenseChain Discord](https://discord.gg/licensechain)
-- **Email**: support@licensechain.com
+- **Email**: support@licensechain.app
 
 ## 🔗 Related Projects
 
