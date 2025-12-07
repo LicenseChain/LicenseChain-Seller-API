@@ -1,4 +1,4 @@
-# LicenseChain Seller API
+﻿# LicenseChain Seller API
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
@@ -7,18 +7,18 @@
 
 Official Seller API for LicenseChain - RESTful API for license management and seller operations.
 
-## 🚀 Features
+## ðŸš€ Features
 
-- **🔐 Authentication** - JWT-based authentication and authorization
-- **📜 License Management** - Create, validate, update, and revoke licenses
-- **👤 User Management** - User registration, login, and profile management
-- **📊 Analytics** - Comprehensive analytics and reporting
-- **🔔 Webhooks** - Real-time event notifications
-- **💳 Payment Integration** - Stripe and PayPal payment processing
-- **🛡️ Security** - Rate limiting, CORS, and input validation
-- **📚 Documentation** - OpenAPI/Swagger documentation
+- **ðŸ” Authentication** - JWT-based authentication and authorization
+- **ðŸ“œ License Management** - Create, validate, update, and revoke licenses
+- **ðŸ‘¤ User Management** - User registration, login, and profile management
+- **ðŸ“Š Analytics** - Comprehensive analytics and reporting
+- **ðŸ”” Webhooks** - Real-time event notifications
+- **ðŸ’³ Payment Integration** - Stripe and PayPal payment processing
+- **ðŸ›¡ï¸ Security** - Rate limiting, CORS, and input validation
+- **ðŸ“š Documentation** - OpenAPI/Swagger documentation
 
-## 📦 Installation
+## ðŸ“¦ Installation
 
 ### Method 1: npm (Recommended)
 
@@ -52,7 +52,7 @@ docker run -p 3000:3000 licensechain-seller-api
 4. Configure environment variables
 5. Start the API: `npm start`
 
-## 🚀 Quick Start
+## ðŸš€ Quick Start
 
 ### Basic Setup
 
@@ -115,7 +115,7 @@ RATE_LIMIT_WINDOW=15
 RATE_LIMIT_MAX=100
 ```
 
-## 📚 API Reference
+## ðŸ“š API Reference
 
 ### Authentication Endpoints
 
@@ -276,7 +276,7 @@ DELETE /api/webhooks/:id
 Authorization: Bearer <token>
 ```
 
-## 🔧 Configuration
+## ðŸ”§ Configuration
 
 ### Application Settings
 
@@ -345,7 +345,7 @@ export default {
 };
 ```
 
-## 🛡️ Security Features
+## ðŸ›¡ï¸ Security Features
 
 ### Authentication
 
@@ -369,7 +369,7 @@ export default {
 - CSRF protection
 - Rate limiting
 
-## 📊 Analytics and Monitoring
+## ðŸ“Š Analytics and Monitoring
 
 ### Request Analytics
 
@@ -414,7 +414,7 @@ app.use((err, req, res, next) => {
 });
 ```
 
-## 🔄 Error Handling
+## ðŸ”„ Error Handling
 
 ### Custom Error Types
 
@@ -463,7 +463,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 });
 ```
 
-## 🧪 Testing
+## ðŸ§ª Testing
 
 ### Unit Tests
 
@@ -492,7 +492,7 @@ npm run test:integration
 npm run test:e2e
 ```
 
-## 📝 Examples
+## ðŸ“ Examples
 
 See the `examples/` directory for complete examples:
 
@@ -501,7 +501,7 @@ See the `examples/` directory for complete examples:
 - `license-management.js` - License management examples
 - `webhook-integration.js` - Webhook handling
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
@@ -513,18 +513,18 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 4. Set up environment variables
 5. Start development server: `npm run dev`
 
-## 📄 License
+## ðŸ“„ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## ðŸ†˜ Support
 
 - **Documentation**: [https://docs.licensechain.app/seller-api](https://docs.licensechain.app/seller-api)
 - **Issues**: [GitHub Issues](https://github.com/LicenseChain/LicenseChain-Seller-API/issues)
 - **Discord**: [LicenseChain Discord](https://discord.gg/licensechain)
 - **Email**: support@licensechain.app
 
-## 🔗 Related Projects
+## ðŸ”— Related Projects
 
 - [LicenseChain Node.js SDK](https://github.com/LicenseChain/LicenseChain-NodeJS-SDK)
 - [LicenseChain Customer Panel](https://github.com/LicenseChain/LicenseChain-Customer-Panel)
@@ -532,4 +532,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ for the LicenseChain community**
+**Made with â¤ï¸ for the LicenseChain community**
+
+
+## API Endpoints
+
+All endpoints automatically use the /v1 prefix when connecting to https://api.licensechain.app.
+
+### Base URL
+- **Production**: https://api.licensechain.app/v1\n- **Development**: https://api.licensechain.app/v1\n\n### Available Endpoints\n\n| Method | Endpoint | Description |\n|--------|----------|-------------|\n| GET | /v1/health | Health check |\n| POST | /v1/auth/login | User login |\n| POST | /v1/auth/register | User registration |\n| GET | /v1/apps | List applications |\n| POST | /v1/apps | Create application |\n| GET | /v1/licenses | List licenses |\n| POST | /v1/licenses/verify | Verify license |\n| GET | /v1/webhooks | List webhooks |\n| POST | /v1/webhooks | Create webhook |\n| GET | /v1/analytics | Get analytics |\n\n**Note**: The SDK automatically prepends /v1 to all endpoints, so you only need to specify the path (e.g., /auth/login instead of /v1/auth/login).
+
